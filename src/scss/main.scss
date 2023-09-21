@@ -28,6 +28,7 @@
     @include container();
 }
 
+
 header {
     display: flex;
     position: sticky;
@@ -381,6 +382,7 @@ section.section {
                     .custom-select__radios {
                         background: rgba(61, 64, 80, 0.85);
                         color: $white-color;
+                        white-space: nowrap;
 
                         &::after {
                             transform: rotate(0deg);

@@ -9,16 +9,15 @@
     list-style-type: none;
     position: relative;
     line-height: normal;
-    touch-action: none;
 }
 
-html {
-    overflow-x: hidden;
-}
 
+
+html,
 body {
     font-family: 'Lato';
     font-style: normal;
+    contain: paint;
 }
 
 img {
