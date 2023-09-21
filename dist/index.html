@@ -33,7 +33,7 @@
             </ul>
 
             <div class="burgerMenu header__burgerMenu">
-                <input class="burgerMenu-checkbox" type="checkbox" name="" id="" />
+                <input class="burgerMenu-checkbox" type="checkbox">
                 <div class="burgerMenu-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -184,17 +184,17 @@
             </div>
 
             <div class="form form--action-order">
-                <form action="order.php">
+                <form action="/">
                     <details class="custom-select form__item">
                         <summary class="custom-select__radios radios">
                             <input type="radio" name="item" id="default" class="radios__input"
-                                title="Выберите тип системы" checked>
+                                value="Выберите тип системы" checked>
                             <input type="radio" name="item" id="item1" class="radios__input"
-                                title="Sed ut perspiciatis">
-                            <input type="radio" name="item" id="item2" class="radios__input" title="Nemo enim ipsam">
-                            <input type="radio" name="item" id="item3" class="radios__input" title="Et harum quidem">
-                            <input type="radio" name="item" id="item4" class="radios__input" title="Temporibus autem">
-                            <input type="radio" name="item" id="item5" class="radios__input" title="Itaque earum rerum">
+                                value="Sed ut perspiciatis">
+                            <input type="radio" name="item" id="item2" class="radios__input" value="Nemo enim ipsam">
+                            <input type="radio" name="item" id="item3" class="radios__input" value="Et harum quidem">
+                            <input type="radio" name="item" id="item4" class="radios__input" value="Temporibus autem">
+                            <input type="radio" name="item" id="item5" class="radios__input" value="Itaque earum rerum">
                         </summary>
                         <ul class="custom-select__list list">
                             <li class="list__item">
@@ -216,11 +216,11 @@
                     </details>
 
                     <div class="form__item">
-                        <input type="text" class="form__input" placeholder="Ваш e-mail">
+                        <input type="text" name="email" class="form__input" placeholder="Ваш e-mail">
                     </div>
 
                     <div class="form__item">
-                        <input type="text" class="form__input" placeholder="Ваше имя">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя">
                     </div>
 
                     <div class="form__item form__item-range">
@@ -228,14 +228,14 @@
                             <span class="form__text">Sed ut perspiciatis, unde omnis iste natus</span>
                             <output class="form__output" id="output">75%</output>
                         </p>
-                        <input type="range" class="form__input-range" value="75" min="1" max="100"
+                        <input type="range" name="range" class="form__input-range" value="75" min="1" max="100"
                             oninput="document.querySelector('#output').value = this.value + '%'">
                     </div>
 
                     <div class="form__item">
                         <label>
                             <input type="file" name="file">
-                            <div class="form__item-file">Прикрепить файл</div>
+                            <span class="form__item-file">Прикрепить файл</span>
                         </label>
                     </div>
 
@@ -255,7 +255,7 @@
             </div>
 
             <div class="footer__column sochials">
-                <a href="https://qiwi.com/" target="_blank" class="footer__item">
+                <div class="footer__item">
                     <div class="footer__item-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                             <g clip-path="url(#clip0_4_175)">
@@ -273,9 +273,9 @@
                     <div class="footer__item-text">
                         <p>QIWI wallet</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="https://yoomoney.ru/" target="_blank" class="footer__item">
+                <div class="footer__item">
                     <div class="footer__item-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -292,9 +292,9 @@
                     <div class="footer__item-text">
                         <p>Yandex Money</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="https://www.webmoney.ru/" target="_blank" class="footer__item">
+                <div class="footer__item">
                     <div class="footer__item-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                             <g clip-path="url(#clip0_4_184)">
@@ -312,7 +312,7 @@
                     <div class="footer__item-text">
                         <p>Web Money</p>
                     </div>
-                </a>
+                </div>
             </div>
 
             <div class="footer__column">
