@@ -189,6 +189,10 @@ button.button {
     opacity: 0;
 }
 
+.loaded {
+    overflow: hidden;
+}
+
 .loaded .preloader {
     display: none;
 }
