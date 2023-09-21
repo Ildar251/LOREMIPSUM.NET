@@ -29,6 +29,7 @@ function html() {
 
 function scripts() {
   return src([
+    'node_modules/gsap/',
     'src/js/app.js',
   ])
   .pipe(concat('app.min.js'))

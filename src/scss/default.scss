@@ -134,11 +134,23 @@ button.button {
         border: 1px solid #FFF;
         background: #3E9CDC;
         color: $white-color;
+        transition: all 0.5s ease;
+
+        &:hover {
+            box-shadow: 0 10px 20px rgba(66, 168, 237, 0.2);
+        }
     }
 
     &.button--details {
         border: 1px solid #6F6D7B;
         background: #FFF;
         color: #2A2B30;
+        transition: all 0.5s ease;
+
+        &:hover {
+            box-shadow: 0 10px 20px rgba(66, 168, 237, 0.2);
+        }
     }
+
+
 }
