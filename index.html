@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <a href="/" class="logo">
+            <a href="/" class="logo header__logo">
                 <p class="logo__text">LoremIpsum.<span>Net</span></p>
             </a>
 
-            <ul class="menu">
+            <ul class="menu header__menu">
                 <li class="menu__item">
                     <a href="" class="menu__link">Бизнес</a>
                 </li>
@@ -32,9 +32,9 @@
                 </li>
             </ul>
 
-            <div class="burger__menu">
-                <input class="burger__menu-checkbox" type="checkbox" name="" id="" />
-                <div class="burger__menu-lines">
+            <div class="burgerMenu header__burgerMenu">
+                <input class="burgerMenu-checkbox" type="checkbox" name="" id="" />
+                <div class="burgerMenu-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
                     <span class="line line3"></span>
@@ -59,14 +59,14 @@
                 </ul>
 
                 <div class="buttons">
-                    <button class="buttons__button buttons__button--order">заказать</button>
-                    <button class="buttons__button buttons__button--details">подробнее</button>
+                    <button class="button button--order">заказать</button>
+                    <button class="button button--details">подробнее</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="section section__order">
+    <section class="section section-order">
         <div class="container">
             <h2 class="section__title">
                 Оформление <span>Заказа</span>
@@ -234,11 +234,11 @@
 
                     <div class="form__item">
                         <input type="file" name="file">
-                        <div class="input__file">Прикрепить файл</div>
+                        <div class="form__item-file">Прикрепить файл</div>
                     </div>
 
                     <div class="form__item form__item-button">
-                        <button type="submit" class="buttons__button buttons__button--order">Отправить</button>
+                        <button type="submit" class="button button--order">Отправить</button>
                     </div>
 
                 </form>
@@ -246,8 +246,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container footer__container">
+    <footer class="footer">
+        <div class="container container-footer">
             <div class="footer__column">
                 <p>© 2018 «LoremIpsum.net» Все права защищены.</p>
             </div>
