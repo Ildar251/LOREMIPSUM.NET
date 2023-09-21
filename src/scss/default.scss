@@ -193,6 +193,14 @@ button.button {
     opacity: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
+.loaded {
+    overflow: initial;
+}
+
 .loaded .preloader {
     display: none;
 }
